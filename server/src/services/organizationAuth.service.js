@@ -41,3 +41,7 @@ export const signupService = async (data) => {
   });
   return organization;
 };
+
+export const signinService = async (data) => {
+  let { email, password } = data;
+};

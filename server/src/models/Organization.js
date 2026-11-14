@@ -14,6 +14,12 @@ const organizationSchema = new mongoose.Schema(
       unique: true,
       required: true,
     },
+    phone: {
+      type: String,
+      trim: true,
+      required: true,
+      unique: true,
+    },
     location: {
       type: String,
       trim: true,
@@ -22,6 +28,7 @@ const organizationSchema = new mongoose.Schema(
     password: {
       type: String,
       trim: true,
+      select: false,
       required: true,
     },
   },
